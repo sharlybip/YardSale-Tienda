@@ -1,0 +1,118 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title YardSale: tineda online de motainbikes
+        link(rel="stylesheet", href="../css/styles.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet")
+        script( defer src="../src/index.js")
+
+    body
+
+        nav
+            img.menu(src="../images/icons/icon_menu.svg", alt="menu")
+            .navbar-left
+                img.logo(src="../images/logos/logo_yard_sale.svg", alt="logo")
+                ul
+                    li 
+                        a(href="/") All
+                    li 
+                        a(href="/") Clothes 
+                    li 
+                        a(href="/") Electronics 
+                    li 
+                        a(href="/") Furnitures 
+                    li 
+                        a(href="/") Others
+            .navbar-right
+                ul 
+                    li.navbar-email platzi@example.com 
+                    li.navbar-shopping-cart
+                        img(src="../images/icons/icon_shopping_cart.svg", alt="shopping cart")
+                        div 2
+            .desktop-menu.inactive
+                ul
+                    li 
+                        a.title(href="/") My orders 
+                    li 
+                        a(href="/") My account
+                    li 
+                        a(href="/") Sign out
+            .mobile-menu.inactive.x2
+                ul.first 
+                    li 
+                        a(href="/") CATEGORIES
+                    li 
+                        a(href="/") Electronics
+                    li
+                        a(href="/") Furnitures 
+                    li 
+                        a(href="/") Toys 
+                    li 
+                        a(href="/") Other
+                ul 
+                    li 
+                        a(href="/") My orders 
+                    li 
+                        a(href="/") My account
+                ul 
+                    li 
+                        a.email(href="/") sharlybip@gmail.com 
+                    li 
+                        a.sign-out(href="/") Sing out
+
+        aside.product-detail-shop.inactive.x2
+            .title-container
+                img(src="../images/icons/flechita.svg", alt="")
+                p.title My order
+            .my-order-content 
+                .shopping-cart 
+                    figure 
+                        img(src="https://images.pexels.com/photos/4979788/pexels-photo-4979788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="BMX Bike")
+                    p Bike 
+                    p $30.00
+                    img(src="../images/icons/icon_close.png", alt="")
+                .shopping-cart 
+                    figure 
+                        img(src="https://images.pexels.com/photos/4979788/pexels-photo-4979788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="BMX Bike")
+                    p Bike 
+                    p $30.
+                    img(src="../images/icons/icon_close.png", alt="")
+                .shopping-cart 
+                    figure 
+                        img(src="https://images.pexels.com/photos/4979788/pexels-photo-4979788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="BMX Bike")
+                    p Bike 
+                    p $30.00
+                    img(src="../images/icons/icon_close.png", alt="")
+                .order 
+                    p 
+                        span Total 
+                    p $560.00
+                button.primary-button Checkout 
+
+        aside.product-detail.inactive
+            .product-detail-close 
+                img(src="../images/icons/icon_close.png", alt="close")
+            img(src="https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", alt="camera")
+            .product-info
+                p $35,000
+                p Camera
+                p Objetivo35.0mm ƒ/1.4 ISO 500 Tamaño	6,98 MB Resolución	3177px x 4766px Cámara	Canon EOS M5 Software	Adobe Photoshop CC 2019 (Macintosh)
+                button.primary-button(class="add-to-cart-button")
+                    img(src="../images/icons/bt_add_to_cart.svg", alt="Add to cart")
+                    span Add to cart
+        section.main-container 
+            .cards-container 
+                //- .product-card 
+                //-     img(src="https://images.pexels.com/photos/6567079/pexels-photo-6567079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="")
+                //-     div.product-info
+                //-         div 
+                //-             p $120
+                //-             p Bike 
+                //-         figure 
+                //-             img(src="../images/icons/bt_add_to_cart.svg" alt="")
+        

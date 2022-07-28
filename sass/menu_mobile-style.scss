@@ -1,0 +1,48 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.mobile-menu {
+    padding: 24px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        color: var(--black);
+        font-weight: bold;
+        // margin-bottom: 24px;
+    }
+    .first{
+        border-block-end: 1px solid var(--very-light-pink);
+    }
+    ul {
+        padding: 0;
+        margin: 24px 0 0;
+        list-style: none;
+        
+        li {
+            margin-block-end: 24px;
+            
+        }
+    }
+    .email {
+    font-size: var(--sm);
+    font-weight: 300;
+    }
+    .sign-out {
+        color: var(--hospital-green);
+        font-size: var(--sm);
+    }
+}

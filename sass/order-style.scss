@@ -1,0 +1,110 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.my-order {
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 0;
+}
+.title {
+    font-size: var(--lg);
+    margin-block-end: 40px;
+}
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-block-end: 24px;
+    align-items: center;
+    figure{
+        margin: 0;
+        img{
+            width:70px;
+            height:70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+    p:nth-child(2) {
+        color: var(--very-light-pink);
+    }
+    p:nth-child(3) {
+        font-size: var(--md);
+        font-weight:bold;
+    }
+}
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-block-end: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+    p{
+        &:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+        &:nth-child(2){
+            text-align: end;
+            font-weight: bold;
+        }
+        span {
+            &:nth-child(1){
+                font-size: var(--md);
+                font-weight: bold;
+            }
+            &:nth-child(2){
+                font-size: var(--sm);
+                color: var(--very-light-pink);
+            }
+        }
+    }
+
+}
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width:100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 640px){
+    .product-detail{
+        width: 100%;
+    }
+}
